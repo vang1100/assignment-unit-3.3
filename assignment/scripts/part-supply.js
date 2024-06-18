@@ -61,11 +61,23 @@ let zeroes = [];
 for (let i=0; i<supplyChanges.length; i++){
   //console.log('trying to work the for loop', supplyChanges[i]);
   if ( i < supplyChanges[i]) {
-    console.log('all positive numbers should appear?', supplyChanges[i])
+    //console.log('all positive numbers should appear?', supplyChanges[i])
     positives.push(supplyChanges[i]);
+  } else {
+    if ( i > supplyChanges[i]) {
+    negatives.push(supplyChanges[i]);
+    }
+   }  {
+  if (i === 0) {
+    zeroes.push(i);
+    }
   }
 }
+  
+
 console.log('testing for positive numbers in loop', positives);
+console.log('testing for negatives numbers in loop', negatives);
+console.log('testing for 0 in loop', zeroes);
 
 
 // ***** STRETCH GOALS *********************************************
